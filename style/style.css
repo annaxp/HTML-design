@@ -15,8 +15,16 @@ input {
   outline: none;
 }
 
+li {
+  list-style-type: none;
+}
+
 .container {
   width: 1170px;
   margin: 0 auto;
+}
+
+.skills_box2 {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
