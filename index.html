@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт портфолио</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/49511c96af.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <img class="logo" src="./img/svg/Logo.svg" alt="Логотип">
+            <div class="menu">
+                <a class="menu_item1" href="#">Обо мне</a>
+                <!-- &bull;маркер списка &middot; знак умножения-->
+                <span class="menu_dot">&bull;</span>
+                <!-- <i class="fas fa-circle"></i> -->
+                <a class="menu_item2" href="#">Навыки</a>
+                <span class="menu_dot">&bull;</span>
+                <!-- <i class="fas fa-circle"></i> -->
+                <a class="menu_item3" href="#">Контакты</a>
+                <a class="menu_btn" href="#">Оставить заявку</a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <!-- выпадающее меню -->
+    </nav>
+    <section class="homeAll">
+        <div class="container">
+            <div class="home">
+                <H1 class="home_title">Красота<span class="colorAccent">&nbsp;есть&nbsp; <img class="home_oval"
+                            src="./img/svg/oval.svg" alt="oval"></span>гармония</H1>
+                <H3 class="home_subtitle">Портфолио дизайнера</H3>
+                <div class="home_box">
+                    <div class="home_boxLeft">
+                        <p class="home_text">Живу, чтобы быть счастливой и украшать наш мир</p>
+                        <img class="Card2" src="./img/png/Card_2.png" alt="Карточка-2">
+                        <a class="home_btn" href="#">Подробнее</a>
+                    </div>
+                    <div class="home_boxRight">
+                        <div class="Card1"
+                            style="background-image: url(./img/jpg/photo_ann.jpg); width: 470px; height: 380px;">
+                            <!-- <img src="#" alt="Карточка-1"> -->
+                            <h2 class="home_captionPhoto">Привет</h2>
+                            <h2 class="home_captionPhoto">я Анна</h2>
+                        </div>
+                        <div class="home_innerRight">
+                            <p class="home_text">Я работаю графическим дизайнером и&nbsp;учусь Веб-дизайну в
+                                GeekBrains</p>
+                            <img class="Card3" src="./img/png/Card_3.png" alt="Карточка-3">
+                            <img class="Card4" src="./img/png/Card_4.png" alt="Карточка-4">
+                        </div>
+                        <div class="home_boxBottom">
+                            <img class="Card5" src="./img/png/Card_5.png" alt="Карточка-5">
+                            <img class="Card6" src="./img/png/Card_6.png" alt="Карточка-6">
+                            <img class="Card7" src="./img/png/Card_7.png" alt="Карточка-7">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skillsAll">
+        <div class="container">
+            <div class="skills">
+                <H4 class="skills_title">Работаю в дизайне с 200&nbsp;<img src="./img/svg/emoji.svg"
+                        alt="Emoji">&nbsp;года</H4>
+                <p class="skills_text">У&nbsp;меня много разных навыков, как у&nbsp;человека который всегда идет
+                    в&nbsp;развитие. Люблю море и&nbsp;спорт. Обожаю учится и&nbsp;узнавать новое. Легко общаюсь. Умею
+                    руководить людьми.</p>
+
+                <a class="skills_slider" href="#"><i class="fas fa-angle-left"></i></a>
+                <!-- При нажатии на стрелку box1 скрывается box2 появляется -->
+                <div id="box1" class="skills_box1">
+                    <div class="skills_1">
+                        <img src="./img/svg/skills_1.svg" alt="PhotoShop">
+                        <h5 class="skills_subtitle">Photoshop</h5>
+                        <p class="skills_desk">Моя любимая программа, ее&nbsp;можно изучать всегда. Она позволяет делать
+                            продукт уникальным.</p>
+                        <a href="#" class="skills_btn">Подробнее</a>
+                    </div>
+                    <div class="skills_2">
+                        <img src="./img/svg/skills_2.svg" alt="Illustrator">
+                        <h5 class="skills_subtitle">Illustrator</h5>
+                        <p class="skills_desk">Эту программу я&nbsp;использую в&nbsp;графическом дизайне. Логотипы,
+                            иллюстрации и&nbsp;айдентика.</p>
+                        <a href="#" class="skills_btn">Подробнее</a>
+                    </div>
+                    <div class="skills_3">
+                        <img src="./img/svg/skills_3.svg" alt="Figma">
+                        <h5 class="skills_subtitle">Figma</h5>
+                        <p class="skills_desk">Истинный IT&nbsp;редактор для веб-дизайна, прототипов и&nbsp;командной
+                            работы. Сайты я&nbsp;теперь создаю в&nbsp;ней.</p>
+                        <a href="#" class="skills_btn">Подробнее</a>
+                    </div>
+                    <div class="skills_4">
+                        <img src="./img/svg/skills_4.svg" alt="HTML & CSS">
+                        <h5 class="skills_subtitle">HTML & CSS</h5>
+                        <p class="skills_desk">Без этой славной парочки языка разметки и&nbsp;каскадных таблиц.
+                            Современный веб-дизайн не&nbsp;возможен.</p>
+                        <a href="#" class="skills_btn">Подробнее</a>
+                    </div>
+                </div>
+                <!-- конец box1 -->
+
+                <!-- box2 старт -->
+                <div id="box2" class="skills_box2">
+                    <div class="skills_5">
+                        <img src="./img/svg/skills_5.svg" alt="WebStorm">
+                        <h5 class="skills_subtitle">WebStorm</h5>
+                        <p class="skills_desk">Моя IDE для написания кода. Огромное количество функций
+                            и&nbsp;возможностей, которые я&nbsp;тоже использую.</p>
+                        <a href="#" class="skills_btn">Подробнее</a>
+                    </div>
+                    <div class="skills_6">
+                        <img src="./img/svg/skills_6.svg" alt="JavaScript">
+                        <h5 class="skills_subtitle">JavaScript</h5>
+                        <p class="skills_desk">Нет вы&nbsp;не&nbsp;подумайте, я&nbsp;не&nbsp;программирую Frontend для
+                            сайтов, но&nbsp;базовые знания этого языка у&nbsp;меня есть.</p>
+                        <a href="#" class="skills_btn">Подробнее</a>
+                    </div>
+                    <div class="skills_7">
+                        <img src="./img/svg/skills_7.svg" alt="Vue.js">
+                        <h5 class="skills_subtitle">Vue.js</h5>
+                        <p class="skills_desk">В&nbsp;современном мире все пользуются разными фреймворками.
+                            Я&nbsp;выбрала самый простой.</p>
+                        <a href="#" class="skills_btn">Подробнее</a>
+                    </div>
+                    <div class="skills_8">
+                        <img src="./img/svg/skills_8.svg" alt="Bootstrap">
+                        <h5 class="skills_subtitle">Bootstrap</h5>
+                        <p class="skills_desk">Bootstrap cамый популярный HTML, CSS, и&nbsp;JS фреймворк для разработки
+                            адаптивных и&nbsp;мобильных web-проектов.</p>
+                        <a href="#" class="skills_btn">Подробнее</a>
+                    </div>
+                </div>
+                <!-- финиш box2 -->
+                <a class="skills_slider" href="#"><i class="fas fa-angle-right"></i></a>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="portfolioAll">
+        <div class="container">
+            <div class="portfolio">
+                <H3 class="portfolio_title">Мои работы</H3>
+                <H5 class="portfolio_subtitle">Проверь свой выбор<img class="portfolio_oval" src="./img/svg/oval2.svg"
+                        alt="oval"></span></H5>
+                <div class="portfolio_box">
+                    <div class="portfolio_boxTop">
+                        <h5 class="portfolio_caption">Веб-разработка<a href="#">Сейчас</a></h5>
+                        <p class="portfolio_year">2020</p>
+                        <img src="./img/png/Project01.png" alt="Project01">
+                        <p class="portfolio_text"><i class="fas fa-check-circle"></i>Проект стажировки в GeekBrains</p>
+                        <button class="portfolio_btn">подробнее</button>
+                    </div>
+                    <div class="portfolio_boxLeft">
+                        <h5 class="portfolio_caption">3D моделирование<a href="#">Сейчас</a></h5>
+                        <p class="portfolio_year">200<img src="./img/svg/emoji.svg" alt="Emoji">&nbsp;&ndash;&nbsp;2020
+                        </p>
+                        <img src="./img/png/Project02.png" alt="Project02">
+                        <p class="portfolio_text"><i class="fas fa-check-circle"></i>Конструирование навеса для АЗС</p>
+                        <button class="portfolio_btn">подробнее</button>
+                    </div>
+                    <div class="portfolio_boxRight">
+                        <h5 class="portfolio_caption">Графика <a href="#">Бонус</a></h5>
+                        <p class="portfolio_year">2010-2020</p>
+                        <img src="./img/png/Project03.png" alt="Project03">
+                        <p class="portfolio_text"><i class="fas fa-check-circle"></i>Фирменный стиль Стахановец</p>
+                        <button class="portfolio_btn">подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footerAll">
+        <div class="container">
+            <div class="footer">
+                <div class="footer_boxLeft">
+                    <h5 class="footer_title">Готовы пообщаться</h5>
+                    <a class="footer_socials" href="https://facebook.com/annanika3710" target="_blank"><img
+                            src="./img/svg/icon-facebook.svg" alt="FB"></a>
+                    <a class="footer_socials" href="https://instagram.com/annanika3710" target="_blank"><img
+                            src="./img/svg/icon-instagram.svg" alt="instagram"></a>
+                    <a class="footer_socials" href="https://vk.com/annanika3710" target="_blank"><img
+                            src="./img/svg/icon-vk.svg" alt="VK"></a>
+                    <a class="footer_socials" href="https://tele.gg/annanik37" target="_blank"><img
+                            src="./img/svg/icon-telegram.svg" alt="telegram"></a>
+                    <h5 class="footer_title">Информация</h5>
+                    <ul class="footer_menu">
+                        <li class="footer_list"><a href="#" class="footer_link">www.Poiskvgorode.ru</a></li>
+                        <li class="footer_list"><a href="#" class="footer_link">www.Scanplace.ru</a></li>
+                        <li class="footer_list"><a href="#" class="footer_link">www.SmartBeer.bar</a></li>
+                        <li class="footer_list"><a href="#" class="footer_link">www.Avtotarget.pro</a></li>
+                        <li class="footer_list"><a href="#" class="footer_link">Политика конфидициальности</a></li>
+                        <li class="footer_list"><a href="#" class="footer_link">Pinterest</a></li>
+                    </ul>
+                </div>
+                <div class="footer_boxRight">
+                    <h5 class="footer_title">Напиши</h5>
+                    <a href="#" class="footer_mail">annanika3710@gmail.com</p>
+                        <form action="action">
+                            <fieldset>
+                                <legend class="footer_title">Отправить сообщение</legend>
+                                <i class="far fa-user"></i><input type="text" size="20" placeholder="Ваше имя">
+                                <i class="far fa-envelope"></i><input type="mail" placeholder="E-mail"><br>
+                                <i class="far fa-edit"></i><textarea name="textarea" id="textarea" cols="30"
+                                    rows="5"></textarea>
+                                <input type="submit" value="Отправить"><br>
+                                <input type="checkbox"><span class="conf">Я согласен на обработку персональных
+                                    данных</span>
+                        </form>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
