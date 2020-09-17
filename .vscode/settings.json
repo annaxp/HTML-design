@@ -3,8 +3,10 @@
     
     ],
     "cSpell.language": "en, ru",
+    "editor.formatOnSave": true,
     "cSpell.ignoreWords": [
         "figma",
         "фреймворками"
     ]
+    
 }
