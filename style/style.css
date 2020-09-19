@@ -1,30 +1,200 @@
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 body {
-  font-family: 'Inter', sans-serif;
-}
+  font-family: "Inter", sans-serif; }
 
 html, body {
-  height: 100%;
-}
+  height: 100%; }
+
+a {
+  text-decoration: none; }
 
 input {
-  outline: none;
-}
+  outline: none; }
 
 li {
-  list-style-type: none;
-}
+  list-style-type: none; }
 
 .container {
   width: 1170px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
-.skills_box2 {
-  display: none;
-}
+.logo {
+  height: 48px;
+  padding-top: 18px; }
+
+.menu {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 32px; }
+  .menu_item {
+    font-weight: 400;
+    color: #6C5CE7;
+    padding-left: 28px;
+    padding-right: 28px; }
+  .menu_dot {
+    color: #FDCB6E; }
+  .menu_btn {
+    color: #ffffff;
+    background-color: #6C5CE7;
+    padding: 8px 56px;
+    border-radius: 16px;
+    font-weight: 500; }
+
+.homeAll {
+  background-image: url(../img/svg/shape.svg);
+  background-repeat: no-repeat;
+  background-position: right top; }
+
+.home_title {
+  position: relative;
+  font-weight: bold;
+  font-size: 84px;
+  line-height: 100px;
+  color: #171313; }
+.home_oval {
+  position: absolute;
+  width: 190px;
+  height: 48px;
+  z-index: -1;
+  bottom: 1px; }
+.home_subtitle {
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 62px; }
+.home_text {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px; }
+.home_captionPhoto {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 45px;
+  color: #ffffff; }
+.home_btn {
+  color: #ffffff;
+  background-color: #6C5CE7;
+  padding: 8px 56px;
+  border-radius: 16px;
+  font-weight: 500; }
+
+.colorAccent {
+  color: #D63031;
+  text-shadow: 0 4px #ffffff; }
+
+.card1 {
+  width: 470px;
+  height: 366px;
+  background-image: url("../img/jpg/ann.jpg"); }
+
+.card {
+  border-radius: 16px; }
+
+.skills {
+  background-color: #FFEAA7; }
+  .skills_title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: #171313; }
+  .skills_text {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px; }
+  .skills img {
+    height: 68px;
+    width: 68px; }
+  .skills_subtitle {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px; }
+  .skills_desk {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px; }
+
+.portfolio_title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  color: #171313; }
+.portfolio_subtitle {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px; }
+.portfolio_caption {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px; }
+.portfolio_text {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px; }
+
+.footer {
+  background-image: url(../img/svg/wawe.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center; }
+  .footer_title {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #ADADAD; }
+  .footer_social {
+    height: 60px;
+    width: 60px;
+    padding: 28px; }
+  .footer_link {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #171313; }
+  .footer_link:active {
+    color: #171313; }
+  .footer_link:hover {
+    color: #6C5CE7; }
+  .footer_mail {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: #6C5CE7; }
+  .footer_btn {
+    color: #ffffff;
+    background-color: #6C5CE7;
+    padding: 8px 56px;
+    border-radius: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px; }
+
+.far {
+  position: absolute;
+  z-index: 1;
+  color: #171313;
+  width: 32px; }
+
+.input {
+  height: 48px;
+  padding: 16px;
+  border-radius: 16px;
+  border: none;
+  background-color: #c1c1c1;
+  color: #171313;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 16px; }
+
+.conf {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  color: #9E9E9E; }
+
 /*# sourceMappingURL=style.css.map */
