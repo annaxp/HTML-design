@@ -1,12 +1,10 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
   font-family: "Inter", sans-serif; }
-
-html, body {
-  height: 100%; }
 
 a {
   text-decoration: none; }
@@ -20,6 +18,19 @@ li {
 .container {
   width: 1170px;
   margin: 0 auto; }
+
+.homeAll {
+  background-image: url(../img/svg/shape.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  opacity: 0.99; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 96px;
+  color: #ffffff; }
 
 .logo {
   height: 48px;
@@ -43,54 +54,79 @@ li {
     border-radius: 16px;
     font-weight: 500; }
 
-.homeAll {
-  background-image: url(../img/svg/shape.svg);
-  background-repeat: no-repeat;
-  background-position: right top; }
-
-.home_title {
-  position: relative;
-  font-weight: bold;
-  font-size: 84px;
-  line-height: 100px;
-  color: #171313; }
-.home_oval {
-  position: absolute;
-  width: 190px;
-  height: 48px;
-  z-index: -1;
-  bottom: 1px; }
-.home_subtitle {
-  font-weight: 500;
-  font-size: 52px;
-  line-height: 62px; }
-.home_text {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 27px; }
-.home_captionPhoto {
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 45px;
-  color: #ffffff; }
-.home_btn {
-  color: #ffffff;
-  background-color: #6C5CE7;
-  padding: 8px 56px;
-  border-radius: 16px;
-  font-weight: 500; }
+.home {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .home_title {
+    position: relative;
+    font-weight: bold;
+    font-size: 84px;
+    line-height: 100px;
+    color: #171313;
+    text-align: center; }
+  .home_oval {
+    position: absolute;
+    width: 190px;
+    height: 48px;
+    z-index: -1;
+    bottom: 1px; }
+  .home_subtitle {
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 62px;
+    text-align: center;
+    padding-top: 16px; }
+  .home_text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 20px; }
+  .home_captionPhoto {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 45px;
+    color: #ffffff; }
+  .home_btn {
+    color: #ffffff;
+    background-color: #6C5CE7;
+    border-radius: 16px;
+    height: 48px;
+    font-size: 18px;
+    line-height: 48px;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    margin-top: 30px; }
+  .home_box {
+    display: flex;
+    padding-top: 100px; }
+  .home_boxLeft {
+    width: 292.5px;
+    margin-top: 30px;
+    padding-right: 30px; }
+  .home_boxRight {
+    width: 877.5px; }
+  .home_innerRigh {
+    width: 390px; }
 
 .colorAccent {
   color: #D63031;
   text-shadow: 0 4px #ffffff; }
 
-.card1 {
-  width: 470px;
-  height: 366px;
-  background-image: url("../img/jpg/ann.jpg"); }
-
 .card {
   border-radius: 16px; }
+
+.card1 {
+  width: 487.5px;
+  height: 390px;
+  background-image: url(../img/jpg/ann.jpg);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: 0 -50px;
+  padding: 20px; }
+
+.card2 {
+  width: 262.5px; }
 
 .skills {
   background-color: #FFEAA7; }

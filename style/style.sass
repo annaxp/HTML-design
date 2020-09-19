@@ -11,12 +11,13 @@ $colorAccent2: #55EFC4
 *
   margin: 0
   padding: 0
+  box-sizing: border-box
 
 body
   font-family: 'Inter', sans-serif
 
-html, body
-  height: 100%
+//html, body
+//  height: 100%
 
 a
   text-decoration: none
@@ -30,6 +31,19 @@ li
 .container
   width: $widthAll
   margin: 0 auto
+
+.homeAll
+  background-image: url(../img/svg/shape.svg)
+  background-repeat: no-repeat
+  background-position: right top
+  opacity: .99
+
+.header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 96px
+  color: $colorBack
 
 .logo
   height: 48px
@@ -52,18 +66,17 @@ li
     border-radius: 16px
     font-weight: 500
 
-.homeAll
-  background-image: url(../img/svg/shape.svg)
-  background-repeat: no-repeat
-  background-position: right top
 
 .home
+  padding-top: 100px
+  padding-bottom: 100px
   &_title
     position: relative
     font-weight: bold
     font-size: 84px
     line-height: 100px
     color: $colorContent
+    text-align: center
   &_oval
     position: absolute
     width: 190px
@@ -74,10 +87,13 @@ li
     font-weight: 500
     font-size: 52px
     line-height: 62px
+    text-align: center
+    padding-top: 16px
   &_text
     font-weight: normal
     font-size: 18px
     line-height: 27px
+    padding-bottom: 20px
   &_captionPhoto
     font-weight: 500
     font-size: 36px
@@ -86,22 +102,44 @@ li
   &_btn
     color: $colorBack
     background-color: $colorActive
-    padding: 8px 56px
     border-radius: 16px
+    height: 48px
+    font-size: 18px
+    line-height: 48px
     font-weight: 500
+    text-align: center
+    display: block
+    margin-top: 30px
+  &_box
+    display: flex
+    padding-top: 100px
+  &_boxLeft
+    width: $widthAll / 4
+    margin-top: 30px
+    padding-right: 30px
+  &_boxRight
+    width: $widthAll / 4 * 3
+  &_innerRigh
+    width: $widthAll / 12 * 4
 
 .colorAccent
   color: $colorAccent
   text-shadow: 0 4px $colorBack
 
-.card1
-  width: 470px
-  height: 366px
-  background-image: url("../img/jpg/ann.jpg")
-
 .card
   border-radius: 16px
 
+.card1
+  width: $widthAll / 12 * 5
+  height: $widthAll / 12 * 4
+  background-image: url(../img/jpg/ann.jpg)
+  background-size: 120%
+  background-repeat: no-repeat
+  background-position: 0 -50px
+  padding: 20px
+
+.card2
+  width: $widthAll / 4 - 30px
 
 .skills
   background-color: $colorBack2
