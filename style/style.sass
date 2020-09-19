@@ -1,4 +1,6 @@
 $widthAll: 1170px
+$gutter: 30px
+$col: ($widthAll - $gutter * 11) / 12
 $colorBack: #ffffff
 $colorBack2: #FFEAA7
 $colorActive: #6C5CE7
@@ -37,6 +39,7 @@ li
   background-repeat: no-repeat
   background-position: right top
   opacity: .99
+  background-size: 70%
 
 .header
   display: flex
@@ -46,8 +49,12 @@ li
   color: $colorBack
 
 .logo
-  height: 48px
+  width: 55px
   padding-top: 18px
+
+.logo:hover
+  transform: scale(1.1)
+
 .menu
   font-style: normal
   font-size: 18px
@@ -57,6 +64,8 @@ li
     color: $colorActive
     padding-left: 28px
     padding-right: 28px
+  &_item:hover
+    color: $colorContent
   &_dot
     color: #FDCB6E
   &_btn
@@ -65,11 +74,19 @@ li
     padding: 8px 56px
     border-radius: 16px
     font-weight: 500
-
+    border: 2px solid $colorActive
+    margin-left: 22px
+  &_btn:hover
+    color: $colorActive
+    background-color: $colorBack
+    border: 2px solid $colorActive
 
 .home
   padding-top: 100px
   padding-bottom: 100px
+  background-image: url(../img/svg/animait.svg)
+  background-repeat: no-repeat
+  background-position: right 30px
   &_title
     position: relative
     font-weight: bold
@@ -109,18 +126,30 @@ li
     font-weight: 500
     text-align: center
     display: block
-    margin-top: 30px
+    margin-top: $gutter
+  &_btn:hover
+    color: $colorActive
+    background-color: $colorBack
+    border: 2px solid $colorActive
   &_box
     display: flex
     padding-top: 100px
   &_boxLeft
-    width: $widthAll / 4
-    margin-top: 30px
-    padding-right: 30px
+    width: $col * 3 + $gutter * 2
+    margin-top: $gutter
+    margin-right: $gutter
   &_boxRight
-    width: $widthAll / 4 * 3
-  &_innerRigh
-    width: $widthAll / 12 * 4
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+    width: $col * 9 + $gutter * 8
+  &_innerRight
+    width: $col * 4 + $gutter * 3
+    align-self: flex-end
+  .home_boxBottom
+    margin-top: $gutter
+    display: flex
+    align-items: flex-start
 
 .colorAccent
   color: $colorAccent
@@ -130,24 +159,49 @@ li
   border-radius: 16px
 
 .card1
-  width: $widthAll / 12 * 5
-  height: $widthAll / 12 * 4
+  width: $col * 5 + $gutter * 4
+  height: $col * 4 + $gutter * 3
   background-image: url(../img/jpg/ann.jpg)
   background-size: 120%
   background-repeat: no-repeat
   background-position: 0 -50px
   padding: 20px
+  margin-right: $gutter
 
 .card2
-  width: $widthAll / 4 - 30px
+  width: $col * 3 + $gutter * 2
+
+.card6
+  margin-left: $gutter
+  margin-right: $gutter
+
+.card3, .card4, .card7
+  width: $col * 2 + $gutter
+
+.card3
+  margin-right: $gutter - 5px
+
+.skillsAll
+  background-color: $colorBack2
+  padding-top: 100px
+  padding-bottom: 100px
 
 .skills
-  background-color: $colorBack2
+  &_box
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &_item
+    width: $col * 3 + $gutter *2
+    text-align: center
+    margin-top: $gutter * 2
   &_title
     font-weight: bold
     font-size: 32px
     line-height: 48px
     color: $colorContent
+    text-align: center
+    margin-bottom: 20px
   &_text
     font-weight: normal
     font-size: 24px
@@ -158,13 +212,21 @@ li
   &_subtitle
     font-weight: 500
     font-size: 24px
-    line-height: 36px
+    line-height: 68px
   &_desk
     font-weight: normal
     font-size: 18px
     line-height: 32px
 
+    
 .portfolio
+  padding-top: 100px
+  padding-bottom: 100px
+  text-align: center
+  &_box
+    text-align: left
+    margin-top: 50px
+    margin-bottom: 50px
   &_title
     font-weight: bold
     font-size: 32px
@@ -183,21 +245,35 @@ li
     font-size: 18px
     line-height: 32px
 
-.footer
+
+.footerAll
   background-image: url(../img/svg/wawe.svg)
-  background-repeat: no-repeat
+  background-repeat: repeat-x
   background-position: bottom center
+  margin-top: 100px
+
+.footer
+  display: flex
+  justify-content: space-around
   &_title
-    font-weight: 800
+    font-weight: 600
     font-size: 20px
     line-height: 25px
     letter-spacing: 2.5px
     text-transform: uppercase
     color: $colorContent2
+    margin-bottom: 20px
+  &_socials
+    display: flex
   &_social
-    height: 60px
+    display: block
+    margin-right: $gutter
+    margin-bottom: $gutter
+  &_social img
     width: 60px
-    padding: 28px
+    height: 60px
+  &_social:hover
+    transform: scale(1.1)
   &_link
     font-weight: normal
     font-size: 18px
@@ -207,11 +283,15 @@ li
     color: $colorContent
   &_link:hover
     color: $colorActive
+  &_list
+    margin-bottom: 20px
   &_mail
+    display: block
     font-weight: bold
-    font-size: 32px
+    font-size: 28px
     line-height: 48px
     color: $colorActive
+    margin-bottom: $gutter
   &_btn
     color: $colorBack
     background-color: $colorActive
@@ -220,32 +300,23 @@ li
     font-weight: 500
     font-size: 18px
     line-height: 32px
+    border: 2px solid $colorActive
+    margin-top: 20px
+  &_btn:hover
+    color: $colorActive
+    background-color: $colorBack
+    border: 2px solid $colorActive
 
-.far
-  position: absolute
-  z-index: 1
-  color: $colorContent
-  width: 32px
 
-.input
-  height: 48px
-  padding: 16px
-  border-radius: 16px
-  border: none
-  background-color: #c1c1c1
-  color: $colorContent
+
+.copyright
   font-weight: normal
   font-size: 18px
   line-height: 32px
-  margin: 16px
+  color: $colorContent
+  text-align: center
+  margin-top: $gutter
 
-.conf
-  font-weight: normal
-  font-size: 12px
-  line-height: 15px
-  display: flex
-  align-items: center
-  color: #9E9E9E
 
 
 
