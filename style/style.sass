@@ -15,11 +15,12 @@ $colorAccent2: #55EFC4
   padding: 0
   box-sizing: border-box
 
+
 body
   font-family: 'Inter', sans-serif
 
-//html, body
-//  height: 100%
+html, body
+  height: 100%
 
 a
   text-decoration: none
@@ -31,10 +32,11 @@ li
   list-style-type: none
 
 .container
-  width: $widthAll
+  max-width: $widthAll
   margin: 0 auto
 
 .homeAll
+  width: inherit
   background-image: url(../img/svg/shape.svg)
   background-repeat: no-repeat
   background-position: right top
@@ -45,7 +47,7 @@ li
   display: flex
   justify-content: space-between
   align-items: center
-  height: 96px
+  min-height: 96px
   color: $colorBack
 
 .logo
@@ -88,18 +90,11 @@ li
   background-repeat: no-repeat
   background-position: right 30px
   &_title
-    position: relative
     font-weight: bold
     font-size: 84px
     line-height: 100px
     color: $colorContent
     text-align: center
-  &_oval
-    position: absolute
-    width: 190px
-    height: 48px
-    z-index: -1
-    bottom: 1px
   &_subtitle
     font-weight: 500
     font-size: 52px
@@ -133,11 +128,13 @@ li
     border: 2px solid $colorActive
   &_box
     display: flex
+    //flex-wrap: wrap Добавим через медиа-запрос на 768
     padding-top: 100px
   &_boxLeft
     width: $col * 3 + $gutter * 2
     margin-top: $gutter
     margin-right: $gutter
+    //display: none удалить на 768 через медиа-запросс
   &_boxRight
     display: flex
     flex-wrap: wrap
@@ -154,6 +151,9 @@ li
 .colorAccent
   color: $colorAccent
   text-shadow: 0 4px $colorBack
+  background-image: url(../img/svg/oval.svg)
+  background-repeat: no-repeat
+  background-position: 7px bottom
 
 .card
   border-radius: 16px
@@ -190,11 +190,14 @@ li
   &_box
     display: flex
     flex-wrap: wrap
-    justify-content: space-between
+    justify-content: center
+    align-content: flex-start
   &_item
     width: $col * 3 + $gutter *2
     text-align: center
     margin-top: $gutter * 2
+    margin-right: 10px
+    margin-left: 10px
   &_title
     font-weight: bold
     font-size: 32px
@@ -206,6 +209,7 @@ li
     font-weight: normal
     font-size: 24px
     line-height: 36px
+    text-align: center
   & img
     height: 68px
     width: 68px
@@ -255,6 +259,7 @@ li
 .footer
   display: flex
   justify-content: space-around
+  flex-wrap: wrap
   &_title
     font-weight: 600
     font-size: 20px
