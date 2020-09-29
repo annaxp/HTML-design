@@ -23,7 +23,6 @@ li {
   margin: 0 auto; }
 
 .homeAll {
-  width: inherit;
   background-image: url(../img/svg/shape.svg);
   background-repeat: no-repeat;
   background-position: right top;
@@ -71,6 +70,9 @@ li {
     border: 2px solid #6C5CE7; }
 
 .home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-top: 100px;
   padding-bottom: 100px;
   background-image: url(../img/svg/animait.svg);
@@ -93,26 +95,13 @@ li {
     font-size: 18px;
     line-height: 27px;
     padding-bottom: 20px; }
+  .home_text3 {
+    margin-top: 20px; }
   .home_captionPhoto {
     font-weight: 500;
     font-size: 36px;
     line-height: 45px;
     color: #ffffff; }
-  .home_btn {
-    color: #ffffff;
-    background-color: #6C5CE7;
-    border-radius: 16px;
-    height: 48px;
-    font-size: 18px;
-    line-height: 48px;
-    font-weight: 500;
-    text-align: center;
-    display: block;
-    margin-top: 30px; }
-  .home_btn:hover {
-    color: #6C5CE7;
-    background-color: #ffffff;
-    border: 2px solid #6C5CE7; }
   .home_box {
     display: flex;
     padding-top: 100px; }
@@ -138,7 +127,7 @@ li {
   text-shadow: 0 4px #ffffff;
   background-image: url(../img/svg/oval.svg);
   background-repeat: no-repeat;
-  background-position: 7px bottom; }
+  background-position: 5px bottom; }
 
 .card {
   border-radius: 16px; }
@@ -231,6 +220,8 @@ li {
     font-weight: normal;
     font-size: 18px;
     line-height: 32px; }
+  .portfolio_img {
+    width: 100%; }
 
 .footerAll {
   background-image: url(../img/svg/wawe.svg);
